@@ -21,13 +21,13 @@ exclude = [
 travis-ci = { repository = "eqrion/cbindgen" }
 
 [dependencies]
-clap = { version = "3.1", optional = true }
-indexmap = "1"
+clap = { version = "3.1", git="https://github.com/njeans/clap.git", optional = true }
+indexmap ={version = "1",git ="https://github.com/njeans/indexmap.git", branch="v1.8"}
 log = "0.4"
-serde = { version = "1.0.103", default-features = false, features = ["derive"]}
-serde_json = "1.0"
+serde = { git = "https://github.com/njeans/serde.git", version = "1.0.103", default-features = false, features = ["derive"]}
+serde_json = { git = "https://github.com/njeans/serde_json.git"}
 tempfile = "3.0"
-toml = "0.5"
+toml = {git = "https://github.com/njeans/toml-rs.git"}
 proc-macro2 = "1"
 quote = "1"
 heck = "0.4"
